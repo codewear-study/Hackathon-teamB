@@ -9,7 +9,7 @@ def playmusic(soundfile):
     pygame.mixer.music.play()
 
 
-def stopmusic():  
+def stopmusic():
     pygame.mixer.music.stop()
 
 
@@ -20,6 +20,6 @@ def getmixerargs():
 
 
 def initMixer():
-    BUFFER = 3072 
+    BUFFER = 3072
     FREQ, SIZE, CHAN = getmixerargs()
     pygame.mixer.init(FREQ, SIZE, CHAN, BUFFER)
